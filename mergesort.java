@@ -1,3 +1,4 @@
+/* In this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner.*/
 /* Java program for Merge Sort */
 class MergeSort {
 	
@@ -18,6 +19,7 @@ class MergeSort {
 			R[j] = arr[m + 1 + j];
 
 		/* Merge the temp arrays */
+		
 
 		// Initial indexes of first and second subarrays
 		int i = 0, j = 0;
