@@ -1,3 +1,4 @@
+// Merge sort is a “divide and conquer” algorithm, wherein we first divide the problem into subproblems.
 /* Java program for Merge Sort */
 class MergeSort {
 	
