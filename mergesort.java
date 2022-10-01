@@ -1,5 +1,6 @@
 /* In this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner.*/
 /* Java program for Merge Sort */
+/*Merge sort is the sorting technique that follows the divide and conquer approach*/
 class MergeSort {
 	
 	void merge(int arr[], int l, int m, int r)
@@ -82,7 +83,7 @@ class MergeSort {
 	// Driver code
 	public static void main(String args[])
 	{
-		int arr[] = { 12, 15, 13, 5, 6, 1 };
+		int arr[] = { 10, 16, 12, 5, 6, 1 };
 
 		System.out.println("Given Array");
 		printArray(arr);
