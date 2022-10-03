@@ -52,7 +52,7 @@ class MergeSort {
 	// Driver code
 	public static void main(String args[])
 	{
-		int arr[] = { 10, 16, 12, 5, 6, 1 };
+		int arr[] = { 10, 23, 12, 5, 6, 1 };
 
 		System.out.println("Given Array");
 		printArray(arr);
