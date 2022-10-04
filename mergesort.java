@@ -25,6 +25,8 @@ class MergeSort {
 			int[] a, int[] l, int[] r, int left, int right) {
 
 		int i = 0, j = 0, k = 0;
+		// while loop represent linear time i.e., O(n)
+		
 		while (i < left && j < right) {
 			if (l[i] <= r[j]) {
 				a[k++] = l[i++];
