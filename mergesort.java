@@ -1,5 +1,5 @@
 /* Java program for Merge Sort */
-
+//merge sort is a divide and conquer algorithm
 class MergeSort {
 
 	public static void mergeSort(int[] a, int n) {
