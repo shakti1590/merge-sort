@@ -1,4 +1,5 @@
 /* Java program for Merge Sort */
+// The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm
 
 class MergeSort {
 
@@ -43,7 +44,7 @@ class MergeSort {
 		}
 	}
 
-	/* A utility function to print array of size n */
+	
 	static void printArray(int arr[])
 	{
 		for (int i = 0; i <  arr.length; ++i)
