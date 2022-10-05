@@ -46,6 +46,7 @@ class MergeSort {
 	/* A utility function to print array of size n */
 	static void printArray(int arr[])
 	{
+		//using for loop to iterate the array
 		for (int i = 0; i <  arr.length; ++i)
 			System.out.print(arr[i] + " ");
 		System.out.println();
