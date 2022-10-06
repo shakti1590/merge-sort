@@ -1,5 +1,6 @@
 /* Java program for Merge Sort */
 //merge sort is a divide and conquer algorithm
+import java.util.*;
 class MergeSort {
 
 	public static void mergeSort(int[] a, int n) {
@@ -54,12 +55,20 @@ class MergeSort {
 	// Driver code
 	public static void main(String args[])
 	{
-		int arr[] = { 10, 23, 12, 5, 6, 1 };
+		// taking array as input
+		Scanner sc=new Scanner(System.in);
+		//size of input array
+		int p=sc.nextInt();
+		int[] arr = new int[p];  
+		for(int i=0; i<p; i++)  
+        {  
+        	arr[i]=sc.nextInt();  
+        }
 
-		System.out.println("Given Array");
+		System.out.println("Given Array: ");
 		printArray(arr);
 
-		mergeSort(arr, arr.length);
+		mergeSort(arr, p);
 
 		System.out.println("\nSorted array");
 		printArray(arr);
