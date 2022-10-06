@@ -1,5 +1,6 @@
 /* Java program for Merge Sort */
-//merge sort is a divide and conquer algorithm
+//It is based on the divide-and-conquer strategy. Merge sort continuously cuts down a list into multiple sublists until each has only one item, then merges those sublists into a sorted list.
+
 class MergeSort {
 
 	public static void mergeSort(int[] a, int n) {
