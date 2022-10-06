@@ -37,6 +37,7 @@ class MergeSort {
 		}
 		while (i < left) {
 			a[k++] = l[i++];
+			a[k++] = l[i--]; // ----------Hima -----
 		}
 		while (j < right) {
 			a[k++] = r[j++];
