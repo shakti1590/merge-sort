@@ -65,4 +65,5 @@ class MergeSort {
 		printArray(arr);
 	}
 }
+//Merge sort is a “divide and conquer” algorithm, wherein we first divide the problem into subproblems.
 /* This code is contributed by shakti */
