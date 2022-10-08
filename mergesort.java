@@ -7,9 +7,9 @@ class MergeSort {
 		if (n < 2) {
 			return;
 		}
-		int mid = n / 2;
-		int[] l = new int[mid];
-		int[] r = new int[n - mid];
+		int mid = n / 2; //for 2 equal halves
+		int[] l = new int[mid]; //first half
+		int[] r = new int[n - mid]; //second half
 
 		for (int i = 0; i < mid; i++) {
 			l[i] = a[i];
