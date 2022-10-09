@@ -45,7 +45,7 @@ class MergeSort {
 		}
 	}
 
-	
+	//method to print the array
 	static void printArray(int arr[])
 	{
 		
