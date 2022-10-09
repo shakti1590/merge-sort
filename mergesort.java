@@ -45,7 +45,7 @@ class MergeSort {
 		}
 	}
 
-	//method to print the array
+	
 	static void printArray(int arr[])
 	{
 		
@@ -61,7 +61,6 @@ class MergeSort {
 		Scanner sc=new Scanner(System.in);
 		//size of input array
 		int p=sc.nextInt();
-		//dynamic allocating the memory to the array using new keyword.
 		
 		int[] arr = new int[p];  
 		for(int i=0; i<p; i++)  
