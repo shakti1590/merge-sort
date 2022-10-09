@@ -3,6 +3,7 @@
 import java.util.*;
 class MergeSort {
 
+	//merge sort function
 	public static void mergeSort(int[] a, int n) {
 		if (n < 2) {
 			return;
@@ -60,6 +61,8 @@ class MergeSort {
 		Scanner sc=new Scanner(System.in);
 		//size of input array
 		int p=sc.nextInt();
+		//dynamic allocating the memory to the array using new keyword.
+		
 		int[] arr = new int[p];  
 		for(int i=0; i<p; i++)  
         {  
