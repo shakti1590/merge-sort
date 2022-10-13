@@ -1,82 +1,82 @@
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
 
 int *temp;
 
-// Conquer
-void conquer_merge(int array[], int left, int right, int mid)
+// merge 
+void merge(int arr[], int left, int right, int mid)
 {
     int k = left, i, j;
 
     for(i = left, j = mid + 1; i <= mid && j <= right; k++)
     {
-        if(array[i] <= array[j])
+        if(arr[i] <= arr[j])
         {
-            temp[k] = array[i];
+            temp[k] = arr[i];
             i++;
         }
         else
         {
-            temp[k] = array[j];
+            temp[k] = arr[j];
             j++;
         }
     }
 
     while(i <= mid)
     {
-        temp[k] = array[i];
+        temp[k] = arr[i];
         i++;
         k++;
     }
 
     while(j <= right)
     {
-        temp[k] = array[j];
+        temp[k] = arr[j];
         j++;
         k++;
     }
 
     for(i = left; i <= right; i++)
-        array[i] = temp[i];
+        arr[i] = temp[i];
 }
 
 
 // Divide array into halves
-void divide(int array[], int left, int right)
+void divide(int arr[], int s, int e)
 {
-    if(left < right)
+    if(s < e)
     {
-        int mid = left + (right - left) / 2;
+        int mid = s + (e - s) / 2;
 
-        divide(array, left, mid);
-        divide(array, mid + 1, right);
+        divide(arr, s, mid);
+        divide(arr, mid + 1, e);
 
-        conquer_merge(array, left, right, mid);
+        merge(arr, s, e, mid);
     }
 }
 
-void Merge_Sort(int array[], int size)
+void Merge_Sort(int arr[], int size)
 {
     temp = new int[size];
-    divide(array, 0, size - 1);
+    divide(arr, 0, size - 1);
     delete [] temp;
 }
 
 // Function to print elements of array
-void Print_Array(int array[], int size)
+void printArray(int arr[], int size)
 {
     for(int i = 0; i < size; i++)
-        cout << array[i] << " ";
+        cout << arr[i] << " ";
 
     cout << endl;
 }
 
 int main()
 {
-    int array[] = {2, 4, 3, 1, 6, 8, 4};
-    Merge_Sort(array, 7);
-    Print_Array(array, 7);
+    int arr[] = {2, 4, 3, 1, 6, 8, 4};
+    Merge_Sort(arr, 7);
+    printArray(arr, 7);
     return 0;
 }
 
