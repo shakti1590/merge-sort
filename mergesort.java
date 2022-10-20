@@ -1,5 +1,6 @@
 /* Java program for Merge Sort */
 //merge sort is a divide and conquer algorithm
+/*The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm. In this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner*/
 import java.util.*;
 class MergeSort {
 
@@ -78,4 +79,4 @@ class MergeSort {
 	}
 }
 // The Merge Sort algorithm is a sorting algorithm that is based on the Divide and Conquer paradigm. In this algorithm, the array is initially divided into two equal halves and then they are combined in a sorted manner.
-/* This code is contributed by shakti Singh */
+
