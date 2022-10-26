@@ -1,5 +1,4 @@
-
-//merge sort is a divide and conquer algorithm
+// java program for merge sort
 import java.util.*;
 class MergeSort {
 
