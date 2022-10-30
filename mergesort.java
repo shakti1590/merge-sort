@@ -56,9 +56,9 @@ class MergeSort {
 	// Driver code
 	public static void main(String args[])
 	{
-		// taking array as input
+		// taking input
 		Scanner sc=new Scanner(System.in);
-		//size of input array
+		
 		int p=sc.nextInt();
 		
 		int[] arr = new int[p];  
