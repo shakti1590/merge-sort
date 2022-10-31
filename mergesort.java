@@ -7,9 +7,9 @@ class MergeSort {
 		if (n < 2) {
 			return;
 		}
-		int mid = n / 2; //for 2 equal halves
-		int[] l = new int[mid]; //first half
-		int[] r = new int[n - mid]; //second half
+		int mid = n / 2; 
+		int[] l = new int[mid]; 
+		int[] r = new int[n - mid]; 
 
 		for (int i = 0; i < mid; i++) {
 			l[i] = a[i];
@@ -37,7 +37,7 @@ class MergeSort {
 		}
 		while (i < left) {
 			a[k++] = l[i++];
-			a[k++] = l[i--]; // ----------Hima -----
+			a[k++] = l[i--]; 
 		}
 		while (j < right) {
 			a[k++] = r[j++];
@@ -69,9 +69,7 @@ class MergeSort {
 
 		System.out.println("Given Array: ");
 		printArray(arr);
-
 		mergeSort(arr, p);
-
 		System.out.println("\nSorted array");
 		printArray(arr);
 	}
